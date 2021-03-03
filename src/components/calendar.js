@@ -12,6 +12,7 @@
         return (
             <div style={{ padding: "30px", backgroundColor: "#fff" }}>
                 <FullCalendar
+                    className={classes.calendar}
                     plugins={[interactionPlugin, dayGridPlugin, timeGridPlugin, listPlugin]}
                     initialView="dayGridMonth"
                     displayEventTime={true}
@@ -31,26 +32,10 @@
         )
     })(),
     styles: () => () => ({
-        empty: {
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          minHeight: '4rem',
-          height: '100%',
-          width: '100%',
-          fontSize: '0.75rem',
-          color: '#262A3A',
-          textTransform: 'uppercase',
-          boxSizing: 'border-box',
-        },
-        pristine: {
-          borderWidth: '0.0625rem',
-          borderColor: '#AFB5C8',
-          borderStyle: 'dashed',
-          backgroundColor: '#F0F1F5',
-          '&::after': {
-            content: '"Breadcrumbs"',
-          },
+        calendar: {
+          height: '80vh',
+          maxWidth: '900px',
+          margin: '0 auto',
         },
       }),
 }))();
