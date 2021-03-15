@@ -8,6 +8,7 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "react/jsx-no-undef": [2, { "allowGlobals": true }],
+    "react/prop-types": 0,
     "no-restricted-globals": 0,
     "prettier/prettier": [
       "error",
@@ -26,9 +27,12 @@
     "React": "readonly",
     "useCallback": "readonly",
     "useEffect": "readonly",
+    "useLocation": "readonly",
     "useReducer": "readonly",
     "useRef": "readonly",
     "useRouter": "readonly",
-    "useState": "readonly"
+    "useState": "readonly",
+    "useHistory": "readonly",
+    "useOptions": "readonly"
   }
 }
